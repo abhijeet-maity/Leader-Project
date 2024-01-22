@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>LEADER BOARD</h1>
+        <form onsubmit="addPlayer(event)">
+            <div class="data">
+                <label for="first-name">First Name -</label>
+                <input id="first-name" type="text" name="first-name" placeholder="First Name"/>
+            </div>
+            <div class="data">
+                <label for="last-name">Last Name -</label>
+                <input id="last-name" type="text" name="last-name" placeholder="Last Name"/>
+            </div>
+            <div class="data">
+                <label for="country">Country -</label>
+                <input id="country" type="text" name="country" placeholder="Country"/>
+            </div>
+            <div class="data">
+                <label for="score">Score</label>
+                <input id="score" type="number" name="score" placeholder="Player Score"/>
+            </div>
+            <button type="submit">Add Score</button>
+        </form>
+        <div class="board">
+            <ul id="player-List">
+
+            </ul> 
+        </div>
+        
+    </main>
+<script src="app.js"></script>
+</body>
+</html>
